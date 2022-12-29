@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A70836E5295E0B1D00BA7DF3 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70836E4295E0B1D00BA7DF3 /* OptionsView.swift */; };
+		A717195E295E07A20021BB98 /* PillsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A717195D295E07A20021BB98 /* PillsGrid.swift */; };
 		A72DB979295DFE1F0055D50C /* NeotifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72DB978295DFE1F0055D50C /* NeotifyApp.swift */; };
 		A72DB97B295DFE1F0055D50C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72DB97A295DFE1F0055D50C /* ContentView.swift */; };
 		A72DB97D295DFE220055D50C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A72DB97C295DFE220055D50C /* Assets.xcassets */; };
@@ -14,6 +16,7 @@
 		A72DB98A295DFE220055D50C /* NeotifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72DB989295DFE220055D50C /* NeotifyTests.swift */; };
 		A72DB994295DFE220055D50C /* NeotifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72DB993295DFE220055D50C /* NeotifyUITests.swift */; };
 		A72DB996295DFE220055D50C /* NeotifyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72DB995295DFE220055D50C /* NeotifyUITestsLaunchTests.swift */; };
+		A72DB9A5295DFF770055D50C /* NeonPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72DB9A4295DFF770055D50C /* NeonPill.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A70836E4295E0B1D00BA7DF3 /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
+		A717195D295E07A20021BB98 /* PillsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillsGrid.swift; sourceTree = "<group>"; };
 		A72DB975295DFE1F0055D50C /* Neotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A72DB978295DFE1F0055D50C /* NeotifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeotifyApp.swift; sourceTree = "<group>"; };
 		A72DB97A295DFE1F0055D50C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +49,7 @@
 		A72DB98F295DFE220055D50C /* NeotifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeotifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A72DB993295DFE220055D50C /* NeotifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeotifyUITests.swift; sourceTree = "<group>"; };
 		A72DB995295DFE220055D50C /* NeotifyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeotifyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A72DB9A4295DFF770055D50C /* NeonPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeonPill.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				A72DB978295DFE1F0055D50C /* NeotifyApp.swift */,
-				A72DB97A295DFE1F0055D50C /* ContentView.swift */,
+				A72DB9A3295DFEE20055D50C /* Views */,
+				A72DB9A2295DFEDB0055D50C /* Model */,
 				A72DB97C295DFE220055D50C /* Assets.xcassets */,
 				A72DB97E295DFE220055D50C /* Preview Content */,
 			);
@@ -125,6 +132,24 @@
 				A72DB995295DFE220055D50C /* NeotifyUITestsLaunchTests.swift */,
 			);
 			path = NeotifyUITests;
+			sourceTree = "<group>";
+		};
+		A72DB9A2295DFEDB0055D50C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A72DB9A3295DFEE20055D50C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A72DB97A295DFE1F0055D50C /* ContentView.swift */,
+				A72DB9A4295DFF770055D50C /* NeonPill.swift */,
+				A717195D295E07A20021BB98 /* PillsGrid.swift */,
+				A70836E4295E0B1D00BA7DF3 /* OptionsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A717195E295E07A20021BB98 /* PillsGrid.swift in Sources */,
 				A72DB97B295DFE1F0055D50C /* ContentView.swift in Sources */,
+				A72DB9A5295DFF770055D50C /* NeonPill.swift in Sources */,
+				A70836E5295E0B1D00BA7DF3 /* OptionsView.swift in Sources */,
 				A72DB979295DFE1F0055D50C /* NeotifyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
